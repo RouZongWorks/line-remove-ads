@@ -1,0 +1,36 @@
+#include <winres.h>
+#include "resource.h"
+
+#define APP_VERSION_MAJOR 1
+#define APP_VERSION_MINOR 0
+#define APP_VERSION_PATCH 0
+
+IDI_APP ICON "..\\assets\\icon.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION APP_VERSION_MAJOR, APP_VERSION_MINOR, APP_VERSION_PATCH, 0
+ PRODUCTVERSION APP_VERSION_MAJOR, APP_VERSION_MINOR, APP_VERSION_PATCH, 0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Line Remove Ads - tray utility that removes ads from LINE for Windows"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "LineRemoveAds"
+            VALUE "LegalCopyright", "Released under the MIT License"
+            VALUE "OriginalFilename", "Line Remove Ads.exe"
+            VALUE "ProductName", "Line Remove Ads"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

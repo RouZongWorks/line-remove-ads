@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Project build output
+bin/
+build/
+dist/
+
+# Python
+__pycache__/
+*.pyc
